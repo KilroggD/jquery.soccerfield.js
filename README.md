@@ -94,6 +94,14 @@ _Right part is for "x" or "soccer" position:_
 You can combine these positions as it is showed in example
 
 
+**Methods**
+
+Methods are available through $selector.data("soccerfield") attribute.
+
+revealField() - reveals field and players
+revealPlayers() - reveals hidden players
+destroy() - destroys instance of plugin
+
 **Themes:**
 
 You are free to create your own themes. For example soccerfield.default.css theme is provided

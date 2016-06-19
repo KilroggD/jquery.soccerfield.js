@@ -96,7 +96,7 @@ You can combine these positions as it is showed in example
 
 **Methods**
 
-Methods are available through $selector.data("soccerfield") attribute.
+Methods are available through _$selector.data("soccerfield")_ attribute.
 
 _revealField()_ - reveals field and players
 

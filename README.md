@@ -97,3 +97,11 @@ You can combine these positions as it is showed in example
 **Themes:**
 
 You are free to create your own themes. For example soccerfield.default.css theme is provided
+
+
+*TODO:*
+* Create minified version
+* Manage players's numbers
+* Manage players changes and substitutions
+* More customization and themes
+* Bower install

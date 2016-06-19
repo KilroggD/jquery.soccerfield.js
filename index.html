@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Soccerfield plugin example</title>
+        <meta name="description" content="Soccerfield plugin example" />
+        <meta name="keywords" content="css animation, website, effect, css3, jquery, plugin, soccer, football" />
+        <meta name="author" content="Kilrogg" />		
+        <link rel="stylesheet" type="text/css" href="css/soccerfield.css" />		
+        <link rel="stylesheet" type="text/css" href="css/soccerfield.default.css" />		
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.soccerfield.js"></script>
+        <script type="text/javascript">
+            //Soccer players data. Could be set as a variable or loaded from server
+            var data = [
+                {name: 'Gianluigi Buffon', position: 'C_GK'},
+                {name: 'Leonardo Bonucci', position: 'LC_B'},
+                {name: 'Giorgio Chiellini', position: 'C_B'},
+                {name: 'Andrea Barzagli', position: 'RC_B'},
+                {name: 'Daniele De Rossi', position: 'C_DM'},
+                {name: 'Alessandro Florenzi', position: 'L_M'},                
+                {name: 'Emanuele Giaccherini', position: 'LC_M'},
+                {name: 'Marco Parolo', position: 'RC_M'},
+                {name: 'Antonio Candreva', position: 'R_M'},
+                {name: 'Éder', position: 'LC_F'},
+                {name: 'Graziano Pellè', position: 'RC_F'},
+            ];
+            $(document).ready(function () {
+                var options =  {
+            field: {
+                width: "960px",
+                height: "600px",
+                img: 'img/soccerfield_green.png',
+                startHidden: true,
+                animate: true,
+                fadeTime: 1000,
+                autoReveal:true,
+                onReveal: function () {
+
+                }
+            },
+            players: {
+                font_size: 16,
+                reveal: true,
+                sim: false,
+                timeout: 1000,
+                fadeTime: 2000,
+                img: 'img/soccer-player.png',
+                onReveal: function () {
+                    alert("players revealed!");
+                }
+            }
+        };
+        $("#soccerfield").soccerfield(data,options);
+            });
+        </script>
+    </head>
+
+    <body>
+        <div id="soccerfield">
+
+        </div>
+    </body>
+</html>

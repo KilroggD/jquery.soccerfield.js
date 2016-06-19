@@ -1,0 +1,132 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16.06.2016, 15:15:00
+    Author     : admin
+*/
+
+
+.soccerfield-field-container {
+    /*perspective:2500px;
+    perspective-origin: 50% 50%;*/
+}
+
+.soccerfield-field {  
+    perspective:3000px;
+    perspective-origin: 50% 50%;
+    /* transform: rotate3d(30,0,0,35deg);*/
+    /*background: url('/img/fifa_soccer_field_1.png') 0 0 no-repeat;*/
+    background-size: auto;
+}
+
+.soccerfield-field-field-img {
+    transform: rotate3d(1,0,0,35deg) translateX(-1%);
+}
+
+.soccerfield-player {
+    -webkit-transform-style: preserve-3d;
+    transform: translateY(55%) translateX(20%);
+}
+
+
+/*
+player img
+*/
+.soccerfield-player .soccerfield-player-img {
+    display:block;
+    position: absolute;
+    bottom:70px;
+    left:-50px;
+    z-index: 100;
+}
+
+/*
+player name
+*/
+.soccerfield-player span {
+    display:block;
+    z-index: 150;
+    margin-left: 25px;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+    background: linear-gradient(to right,#1b1f28, #2a303e);
+    background: -webkit-linear-gradient(to right,#1b1f28, #2a303e);
+    min-height: 90px;
+    border: 5px solid #1b1f28;
+    border-radius: 10px;
+    width: 230px;
+    height: 140px;
+}
+
+/*
+GoalKeeper
+*/
+.soccerfield-player.posX-GK {
+    left:5%;
+}
+/*
+Back
+*/
+.soccerfield-player.posX-B {
+    left: 20%;
+}
+/*
+Defending midfielder
+*/
+.soccerfield-player.posX-DM {
+    left: 35%;
+}
+
+/*
+Midfielder
+*/
+.soccerfield-player.posX-M {
+    left:50%;
+}
+/*
+Attacking midfielder
+*/
+.soccerfield-player.posX-AM {
+    left: 60%
+}
+/*
+Forward
+*/
+.soccerfield-player.posX-F {
+    left: 75%;
+}
+/*
+Left
+*/
+.soccerfield-player.posY-L {
+    top: 10%;
+}
+/*
+Left-center
+*/
+.soccerfield-player.posY-LC {
+    top: 30%
+}
+/*
+Center
+*/
+.soccerfield-player.posY-C {
+    top:45%;
+}    
+/*
+Right-center
+*/
+.soccerfield-player.posY-RC {
+    bottom:30%; 
+}
+/*
+Right
+*/
+.soccerfield-player.posY-R {
+    bottom:10%; 
+}
+

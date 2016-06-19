@@ -98,9 +98,14 @@ You can combine these positions as it is showed in example
 
 Methods are available through $selector.data("soccerfield") attribute.
 
-revealField() - reveals field and players
-revealPlayers() - reveals hidden players
-destroy() - destroys instance of plugin
+_revealField()_ - reveals field and players
+
+
+_revealPlayers()_ - reveals hidden players
+
+
+_destroy()_ - destroys instance of plugin
+
 
 **Themes:**
 

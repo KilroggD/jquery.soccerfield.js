@@ -9,6 +9,9 @@ $(document).ready(function(){
 });
 ```
 
+**To see an example** simply clone/download the repo, go to the _demo_ folder and launch index.html
+
+
 **Available options (example with comments):**
 ```javascript
 var options =  {

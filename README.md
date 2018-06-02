@@ -70,7 +70,7 @@ var data = [
   {name: 'Marco Parolo', position: 'RC_M'},
   {name: 'Antonio Candreva', position: 'R_M'},
   {name: 'Éder', position: 'LC_F'},
-  {name: 'Graziano Pellè', position: 'RC_F'},
+  {name: 'Lionel Messi', position: 'RC_F', img: 'img/argentina_flag.png'},
 ];
 ```
 
@@ -108,6 +108,11 @@ _revealPlayers()_ - reveals hidden players
 
 
 _destroy()_ - destroys instance of plugin
+
+
+**Added features:**
+Now you are able to assign picture individually for each player using _img_ key in you _data_ array 
+If img is not set - the plugin will pick up one from the _options.players.img_
 
 
 **Themes:**

@@ -71,14 +71,15 @@
         //append player element to the field
         var appendPlayer = function (player, i) {
             var name = player.name, pos, posX, posY, $container = $("<div class='soccerfield-player' id='soccerfield-player-" + i + "'></div>");
+            var img = player.img || soccerfield.options.players.img;			
             pos = player.position.split("_");
             if (soccerfield.options.players.reveal) {
                 $container.css({"display": "none"});
             }
             $container.addClass("posY-" + pos[0]);
             $container.addClass("posX-" + pos[1]);
-            if (soccerfield.options.players.img) {
-                $container.append("<div style='left:-"+soccerfield.options.players.font_size+"px' class='soccerfield-player-img'><img src='" + soccerfield.options.players.img + "'/></div>");
+            if (img) {
+                $container.append("<div style='left:-"+soccerfield.options.players.font_size+"px' class='soccerfield-player-img'><img src='" + img + "'/></div>");
             }
             $container.append("<span class='soccerfield-player-name' style='font-size:" + soccerfield.options.players.font_size + "px"+";min-height:"+ soccerfield.options.players.font_size*2.25 + "px"+"'>" + name + "</span>");
             $element.append($container);
